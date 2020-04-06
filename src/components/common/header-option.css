@@ -1,0 +1,13 @@
+.header-option {
+  border-bottom: 0.5px solid #ccc;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+  padding: 10px;
+  display: block;
+}
+
+.header-option:hover {
+  background-color: rgb(248, 247, 247);
+  cursor: pointer;
+}

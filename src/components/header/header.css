@@ -1,0 +1,15 @@
+.wrap {
+  width: 100%;
+  height: 100px;
+}
+
+.title {
+  border: 0.5px transparent solid;
+  font-size: 1.5em;
+  padding: 5px;
+  margin: 10px;
+}
+
+.title:hover {
+  border-color: #ccc;
+}
