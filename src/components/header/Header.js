@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import HeaderButton from "../common/HeaderButton";
+import Logo from "./p.png";
 
 const Header = () => {
   const [title, setTitle] = useState("Untitled Document");
@@ -10,6 +11,7 @@ const Header = () => {
   const helpOptions = ["Accessbility", "Keyboard Shorcuts", "See Docs"];
   return (
     <div className="wrap">
+      <img src={Logo} style={{ width: "88px", height: "88px" }} />
       <input
         className="title"
         value={title}

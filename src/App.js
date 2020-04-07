@@ -8,7 +8,9 @@ const App = () => {
     <div>
       <Header />
       <Toolbar />
-      <Editor />
+      <div style={{ backgroundColor: "#ccc", width: "100%" }}>
+        <Editor />
+      </div>
     </div>
   );
 };

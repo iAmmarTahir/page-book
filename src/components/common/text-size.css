@@ -1,0 +1,10 @@
+.text-size-wrap {
+  border-right: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.size-selector {
+  margin-top: 8px;
+  height: 27px;
+  width: 85%;
+}
