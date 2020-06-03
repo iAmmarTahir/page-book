@@ -5,8 +5,10 @@
 1. **Install [Node 8 or higher](https://nodejs.org)**
 2. **Navigate to this project's root directory on the command line.**
 3. **Install Node Packages.** - `npm install`
-4. **Open the Project folder in CLI and type - `npm start`**
-5. **Navigate to `http:\\localhost:3000` to see the app running.**
+4. **Navigate to "server" folder in new terminal window and run : `npm install`**
+5. **Then run `node index` in the CLI. The backend will start to run at `http:\\localhost:5000`**
+6. **Open the Project folder in CLI and type - `npm start`**
+7. **Navigate to `http:\\localhost:3000` to see the app running.**
 
 ### Production Dependencies
 
