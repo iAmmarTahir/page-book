@@ -11,7 +11,7 @@ const styleSheet = {
   },
 };
 
-const HeaderButton = ({ name, options }) => {
+const HeaderButton = ({ name, options, action }) => {
   const [clicked, setClicked] = useState(false);
   return (
     <div className="header-btn">
@@ -27,7 +27,7 @@ const HeaderButton = ({ name, options }) => {
         style={clicked ? styleSheet.show : styleSheet.notShow}
       >
         {options.map((option) => (
-          <HeaderOption key={option} option={option} />
+          <HeaderOption key={option} option={option} action={action} />
         ))}
       </div>
     </div>

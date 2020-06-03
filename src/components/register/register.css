@@ -1,0 +1,9 @@
+h6 {
+    color: #5bf584;
+}
+
+h6:hover {
+    color: #42bd63;
+    transition: all 0.1 ease-in-out;
+    cursor: pointer;
+}

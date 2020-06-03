@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./header.css";
 import HeaderButton from "../common/HeaderButton";
-import Logo from "./p.png";
+import Logo from "../p.png";
 
-const Header = () => {
+const Header = (props) => {
   const [title, setTitle] = useState("Untitled Document");
   const fileOptions = ["Open", "Save", "Download", "Make a Copy"];
   const exportOptions = ["To Google Drive", "To Dropbox"];
   const collaborateOptions = ["Collaborators", "Invite Others via Email"];
   const helpOptions = ["Accessbility", "Keyboard Shorcuts", "See Docs"];
+  const userOptions = ["Logout"];
   return (
     <div className="wrap">
       <img src={Logo} style={{ width: "88px", height: "88px" }} />
@@ -30,6 +31,13 @@ const Header = () => {
         <div className="col-md-2">
           <HeaderButton name="Help" options={helpOptions} />
         </div>
+        <div className="col-md-2"></div>
+        {
+          props.user.user.name  ? (
+          <div className="col-md-2">
+            <HeaderButton name={props.user.user.name} options={userOptions} action={props.user.setAuthenticated} />
+          </div>): null
+        }
       </div>
     </div>
   );
